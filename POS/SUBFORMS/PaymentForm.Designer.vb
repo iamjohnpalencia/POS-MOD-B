@@ -523,12 +523,12 @@ Partial Class PaymentForm
         Me.TextBoxCHANGE.BackColor = System.Drawing.Color.White
         Me.TextBoxCHANGE.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxCHANGE.Enabled = False
-        Me.TextBoxCHANGE.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.TextBoxCHANGE.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxCHANGE.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBoxCHANGE.Location = New System.Drawing.Point(207, 189)
+        Me.TextBoxCHANGE.Location = New System.Drawing.Point(207, 187)
         Me.TextBoxCHANGE.Name = "TextBoxCHANGE"
         Me.TextBoxCHANGE.ReadOnly = True
-        Me.TextBoxCHANGE.Size = New System.Drawing.Size(123, 15)
+        Me.TextBoxCHANGE.Size = New System.Drawing.Size(123, 20)
         Me.TextBoxCHANGE.TabIndex = 96
         Me.TextBoxCHANGE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -567,12 +567,12 @@ Partial Class PaymentForm
         Me.TextBoxTOTALPAY.BackColor = System.Drawing.Color.White
         Me.TextBoxTOTALPAY.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxTOTALPAY.Enabled = False
-        Me.TextBoxTOTALPAY.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.TextBoxTOTALPAY.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxTOTALPAY.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBoxTOTALPAY.Location = New System.Drawing.Point(9, 27)
+        Me.TextBoxTOTALPAY.Location = New System.Drawing.Point(9, 28)
         Me.TextBoxTOTALPAY.Name = "TextBoxTOTALPAY"
         Me.TextBoxTOTALPAY.ReadOnly = True
-        Me.TextBoxTOTALPAY.Size = New System.Drawing.Size(322, 15)
+        Me.TextBoxTOTALPAY.Size = New System.Drawing.Size(322, 20)
         Me.TextBoxTOTALPAY.TabIndex = 94
         Me.TextBoxTOTALPAY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -595,12 +595,12 @@ Partial Class PaymentForm
         '
         Me.TextBoxMONEY.BackColor = System.Drawing.Color.White
         Me.TextBoxMONEY.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBoxMONEY.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.TextBoxMONEY.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxMONEY.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBoxMONEY.Location = New System.Drawing.Point(9, 189)
+        Me.TextBoxMONEY.Location = New System.Drawing.Point(9, 187)
         Me.TextBoxMONEY.MaxLength = 10
         Me.TextBoxMONEY.Name = "TextBoxMONEY"
-        Me.TextBoxMONEY.Size = New System.Drawing.Size(189, 15)
+        Me.TextBoxMONEY.Size = New System.Drawing.Size(189, 20)
         Me.TextBoxMONEY.TabIndex = 95
         Me.TextBoxMONEY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
