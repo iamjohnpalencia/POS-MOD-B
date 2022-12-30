@@ -38,8 +38,7 @@ Partial Class AuditTrail
         Me.tscRowLimit = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
+        Me.tssrowcount = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LabelDate = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -101,7 +100,7 @@ Partial Class AuditTrail
         Me.tscRowLimit.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.tscRowLimit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.tscRowLimit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.tscRowLimit.Items.AddRange(New Object() {"100", "200", "500", "1000", "All"})
+        Me.tscRowLimit.Items.AddRange(New Object() {"All", "10", "50", "100", "500", "1000"})
         Me.tscRowLimit.Name = "tscRowLimit"
         Me.tscRowLimit.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.tscRowLimit.Size = New System.Drawing.Size(121, 25)
@@ -115,23 +114,18 @@ Partial Class AuditTrail
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripProgressBar1})
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tssrowcount})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 494)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(1008, 22)
         Me.StatusStrip1.TabIndex = 4
         Me.StatusStrip1.Text = "StatusStrip1"
         '
-        'ToolStripStatusLabel1
+        'tssrowcount
         '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(39, 17)
-        Me.ToolStripStatusLabel1.Text = "Status"
-        '
-        'ToolStripProgressBar1
-        '
-        Me.ToolStripProgressBar1.Name = "ToolStripProgressBar1"
-        Me.ToolStripProgressBar1.Size = New System.Drawing.Size(100, 16)
+        Me.tssrowcount.Name = "tssrowcount"
+        Me.tssrowcount.Size = New System.Drawing.Size(78, 17)
+        Me.tssrowcount.Text = "Row Count: 0"
         '
         'Panel1
         '
@@ -187,7 +181,7 @@ Partial Class AuditTrail
         Me.DataGridViewAuditTrail.Name = "DataGridViewAuditTrail"
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.ControlDark
         DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -280,11 +274,12 @@ Partial Class AuditTrail
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AuditTrail"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "AuditTrail"
+        Me.Text = "POS | AUDIT TRAIL"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
@@ -299,8 +294,7 @@ Partial Class AuditTrail
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripButton3 As ToolStripButton
     Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
-    Friend WithEvents ToolStripProgressBar1 As ToolStripProgressBar
+    Friend WithEvents tssrowcount As ToolStripStatusLabel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents DataGridViewAuditTrail As DataGridView

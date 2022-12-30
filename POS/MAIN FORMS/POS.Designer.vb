@@ -837,7 +837,7 @@ Partial Class POS
         Me.ButtonWaffleUpgrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonWaffleUpgrade.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonWaffleUpgrade.ForeColor = System.Drawing.Color.White
-        Me.ButtonWaffleUpgrade.Location = New System.Drawing.Point(223, 11)
+        Me.ButtonWaffleUpgrade.Location = New System.Drawing.Point(220, 11)
         Me.ButtonWaffleUpgrade.Name = "ButtonWaffleUpgrade"
         Me.ButtonWaffleUpgrade.Size = New System.Drawing.Size(100, 48)
         Me.ButtonWaffleUpgrade.TabIndex = 66
@@ -868,7 +868,7 @@ Partial Class POS
         Me.ButtonTransactionMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonTransactionMode.Font = New System.Drawing.Font("Tahoma", 9.0!)
         Me.ButtonTransactionMode.ForeColor = System.Drawing.Color.White
-        Me.ButtonTransactionMode.Location = New System.Drawing.Point(117, 11)
+        Me.ButtonTransactionMode.Location = New System.Drawing.Point(114, 11)
         Me.ButtonTransactionMode.Name = "ButtonTransactionMode"
         Me.ButtonTransactionMode.Size = New System.Drawing.Size(100, 48)
         Me.ButtonTransactionMode.TabIndex = 59
